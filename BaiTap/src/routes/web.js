@@ -12,6 +12,7 @@ const portfolioController = require('../controllers/portfolioController');
 const partnerController = require('../controllers/partnerController');
 const policyController = require('../controllers/policyController');
 const blogController = require('../controllers/blogController');
+const careerController = require('../controllers/careerController');
 
 // Khai báo route cho người A (Home)
 router.get('/', homeController.getHomePage);
@@ -48,5 +49,8 @@ router.get('/policy', policyController.getPolicyPage);
 
 // Khai báo route Blog (Góc chia sẻ kinh nghiệm)
 router.get('/blog', blogController.getBlogPage);
+
+// Khai báo route Tuyển dụng (Cơ hội nghề nghiệp)
+router.get('/career', careerController.getCareerPage);
 
 module.exports = router;
