@@ -9,6 +9,7 @@ const newsController = require('../controllers/newsController');
 const faqController = require('../controllers/faqController');
 const feedbackController = require('../controllers/feedbackController');
 const portfolioController = require('../controllers/portfolioController');
+const partnerController = require('../controllers/partnerController');
 
 // Khai báo route cho người A (Home)
 router.get('/', homeController.getHomePage);
@@ -36,5 +37,8 @@ router.get('/feedback', feedbackController.getFeedbackPage);
 
 // Khai báo route Portfolio (Thực hành kéo/đẩy code nhóm)
 router.get('/portfolio', portfolioController.getPortfolioPage);
+
+// Khai báo route Partner (Danh sách đối tác)
+router.get('/partner', partnerController.getPartnerPage);
 
 module.exports = router;
