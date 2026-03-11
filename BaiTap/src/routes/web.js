@@ -8,6 +8,7 @@ const serviceController = require('../controllers/serviceController');
 const newsController = require('../controllers/newsController');
 const faqController = require('../controllers/faqController');
 const feedbackController = require('../controllers/feedbackController');
+const portfolioController = require('../controllers/portfolioController');
 
 // Khai báo route cho người A (Home)
 router.get('/', homeController.getHomePage);
@@ -32,5 +33,8 @@ router.get('/faq', faqController.getFaqPage);
 
 // Khai báo route Feedback (Task mới tiếp tục thực hành)
 router.get('/feedback', feedbackController.getFeedbackPage);
+
+// Khai báo route Portfolio (Thực hành kéo/đẩy code nhóm)
+router.get('/portfolio', portfolioController.getPortfolioPage);
 
 module.exports = router;
