@@ -1,5 +1,5 @@
 const express = require('express');
-const router = express.Router();
+const router = express.Router(); //Dòng này được sửa bởi A
 const homeController = require('../controllers/homeController');
 const productController = require('../controllers/productController');
 const aboutController = require('../controllers/aboutController'); //Dòng này được sửa bởi A
