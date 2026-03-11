@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const homeController = require('../controllers/homeController');
 const productController = require('../controllers/productController');
-const aboutController = require('../controllers/aboutController');
+const aboutController = require('../controllers/aboutController'); //Dòng này được sửa bởi A
 const contactController = require('../controllers/contactController');
 const serviceController = require('../controllers/serviceController');
 const newsController = require('../controllers/newsController');
@@ -53,4 +53,5 @@ router.get('/blog', blogController.getBlogPage);
 // Khai báo route Tuyển dụng (Cơ hội nghề nghiệp)
 router.get('/career', careerController.getCareerPage);
 
+console.log("Hello guys");
 module.exports = router;
