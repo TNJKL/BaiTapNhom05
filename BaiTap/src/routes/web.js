@@ -6,6 +6,7 @@ const aboutController = require('../controllers/aboutController');
 const contactController = require('../controllers/contactController');
 const serviceController = require('../controllers/serviceController');
 const newsController = require('../controllers/newsController');
+const faqController = require('../controllers/faqController');
 
 // Khai báo route cho người A (Home)
 router.get('/', homeController.getHomePage);
@@ -24,5 +25,8 @@ router.get('/services', serviceController.getServicePage);
 
 // Khai báo route tin tức (Task bạn mới thêm để push)
 router.get('/news', newsController.getNewsPage);
+
+// Khai báo route FAQ (Cho bạn thực hành push code)
+router.get('/faq', faqController.getFaqPage);
 
 module.exports = router;
